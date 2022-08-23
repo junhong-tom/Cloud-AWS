@@ -54,4 +54,10 @@ Tasks
 • 編輯或刪除 Amazon S3 儲存貯體政策，其中包含無效 VPC 端點 ID 或 VPC 端點 ID 的
   Amazon S3 儲存貯體政策。(Edit or delete an Amazon S3 bucket policy that
   includes an invalid VPC ID or VPC endpoint ID. )
-• 註冊 GovCloud。(Sign up for GovCloud.)
+• 註冊 GovCloud。(Sign up for GovCloud.) <br>
+
+實驗 0001 -- 申請帳號 Root Account User 
+
+實驗 0002 -- 操作 IAM : 創建一位具有管理者權限的 IAM User 替代 Roor Account User
+
+
