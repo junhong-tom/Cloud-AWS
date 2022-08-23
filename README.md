@@ -65,6 +65,29 @@ Tasks
 實驗 0002 -- 操作 IAM : 創建一位具有管理者權限的 IAM User 替代 Roor Account User
 
 AWS 官網建議: [IAM 中的安全最佳實務](https://docs.aws.amazon.com/zh_tw/IAM/latest/UserGuide/best-practices.html)
+建議:
+• 使用暫時性憑證存取
+  要求人類使用者搭配身分提供者使用聯合功能，以便使用暫時性憑證存取 AWS
+• 使用 IAM 角色的暫時性憑證  
+  要求工作負載使用 IAM 角色的暫時性憑證存取 AWS
+• 多重要素驗證
+  需要多重要素驗證 (MFA)
+• 定期輪換存取金鑰 -- 長期憑證的使用
+  對於需要長期憑證的使用案例，請定期輪換存取金鑰
+• 根使用者憑證的保護 
+  保護您的根使用者憑證，不要將其用於日常任務
+• 最低權限許可
+  套用最低權限許可
+• 使用 AWS 受管政策
+  開始使用 AWS 受管政策並朝向最低權限許可的目標邁進
+  使用 IAM 政策中的條件進一步限制存取權
+• 定期檢閱並移除未使用的使用者、角色、許可、政策和憑證
+• IAM Access Analyzer
+  使用 IAM Access Analyzer 根據存取活動產生最低權限政策
+  使用 IAM Access Analyzer 驗證對資源的公開與跨帳戶存取權
+  使用 IAM Access Analyzer 驗證 IAM 政策，確保許可安全且可正常運作
+• 建立跨多個帳戶的許可防護機制
+• 使用許可界限委派帳戶內的許可管理
 
 
 
