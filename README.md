@@ -1,6 +1,10 @@
 # Cloud-AWS
 AWS-雲端
 
+AWS 文件
+尋找使用者指南、開發人員指南、API 參考資料、教學等。
+https://docs.aws.amazon.com/zh_tw/index.html 
+
 Root Acount User:
 1. 申請 AWS 帳號後，帳號就是 Root Acount User (權限特大)
 
@@ -59,5 +63,18 @@ Tasks
 實驗 0001 -- 申請帳號 Root Account User 
 
 實驗 0002 -- 操作 IAM : 創建一位具有管理者權限的 IAM User 替代 Roor Account User
+
+AWS 官網建議: [IAM 中的安全最佳實務](https://docs.aws.amazon.com/zh_tw/IAM/latest/UserGuide/best-practices.html)
+
+
+
+
+實驗 0003 -- 操作 IAM : 創建一位 IAM User 
+
+實驗 0004 -- 操作 IAM : 創建一位 IAM Group
+
+實驗 0004 -- 操作 IAM : 創建一位 IAM Group
+
+
 
 
