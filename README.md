@@ -62,7 +62,7 @@ Tasks
 
 實驗 0001 -- 申請帳號 Root Account User 
 
-實驗 0002 -- 操作 IAM : 創建一位具有管理者權限的 IAM User 替代 Roor Account User
+實驗 0002 -- 操作 IAM : 創建一位具有管理者權限的 IAM User 替代 Roor Account User (無群組)
 
 AWS 官網建議: [IAM 中的安全最佳實務](https://docs.aws.amazon.com/zh_tw/IAM/latest/UserGuide/best-practices.html)
 建議:
@@ -89,14 +89,15 @@ AWS 官網建議: [IAM 中的安全最佳實務](https://docs.aws.amazon.com/zh_
 • 建立跨多個帳戶的許可防護機制
 • 使用許可界限委派帳戶內的許可管理
 
+實驗 0003 -- 停用、刪除 Roor Account User 和 代理人的憑證
 
+實驗 0004 -- 新增授權群組 IAM Group
 
+實驗 0005 -- 操作 IAM : 創建一位 IAM User 透過 IAM Group 授權
 
-實驗 0003 -- 操作 IAM : 創建一位 IAM User 
+實驗 0006 -- 操作 IAM : 創建一位 IAM Group + 創建 IAM Group 並授權
 
-實驗 0004 -- 操作 IAM : 創建一位 IAM Group
-
-實驗 0004 -- 操作 IAM : 創建一位 IAM Group
+實驗 0007 -- 操作 IAM : 創建一位 IAM Group
 
 
 
