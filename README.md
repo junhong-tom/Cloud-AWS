@@ -5,8 +5,16 @@ AWS 文件
 尋找使用者指南、開發人員指南、API 參考資料、教學等。
 https://docs.aws.amazon.com/zh_tw/index.html 
 
-Root Acount User:
-1. 申請 AWS 帳號後，帳號就是 Root Acount User (權限特大)
+Acount Root User:
+1. 申請 AWS 帳號後，帳號就是 Acount Root User (權限特大)
+   Account Number
+   The Aws root user credentials.
+  
+  You must understand the various types of AWS security credentials and how to manage them.
+  必須了解不同類型的 Security Credentials 及如何管理 Credentials
+  
+  Credentials = (身分 identity,權限 permissions )
+  
 
 
 AWS 官網建議: Root Acount User 應該只執行的任務而非甚麼都可以去執行。
@@ -97,7 +105,7 @@ AWS 官網建議: [IAM 中的安全最佳實務](https://docs.aws.amazon.com/zh_
 
 實驗 0006 -- 操作 IAM : 創建一位 IAM Group + 創建 IAM Group 並授權
 
-實驗 0007 -- 操作 IAM : 創建一位 IAM Group
+實驗 0007 --  IAM 密碼政策
 
 
 
