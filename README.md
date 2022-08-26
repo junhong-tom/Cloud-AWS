@@ -40,6 +40,12 @@ Acount Root User:
     
 Access Keys and Key Pairs
 存取金鑰 及 金鑰對
+Access Keys: for api calls (authenticate)
+You must use access keys for programmatic access to AWS services and resources and to use the AWS CLI.
+
+Key pairs: Linux base for loggin
+Consist of a public key and a private key
+You use key pairs to access Amazon EC2 instances and Amazon CloudFront.
   
 
 
