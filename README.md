@@ -15,6 +15,32 @@ Acount Root User:
   
   Credentials = (身分 identity,權限 permissions )
   
+  Two Types of security credentials:
+  1. (username,password) => logging into the AWS Management Console
+  2. access keys => help you make programmatic calls to Aws API operations and run AWS CLI
+  
+ 
+ 根帳號使用者，使用 email 及 密碼，登入管理介面網頁 (Management Console -- Web Pages)，具有最高存取權限
+  Account ----  credential (root user credentials) = (username -- email, password) => sign in to Web Pages => Management Console
+          |_ _  all powerful 
+          
+  MFA = Multi-Factor Authentication => 額外的安全保障
+  Aws recommends that you require MFA on the AWS account root user credentials and privileged 特權 IAM users. 
+  (建議啟用 MFA 功能) 帳號 及 特權使用者
+  
+  IAM helps you secure and control access to AWS services and resources.
+  
+  目標: 
+  First, create an IAM User and grant that user full access to Aws. 創建一位有最高授權的使用者
+  Then use this user's credentials to work with AWS. 操作AWS
+  - As an IAM user, you can sign in to the AWS web pages, the AWS Management Console, and the AWS Support Center, just as you can as th AWS root user.
+    如同根使用者一般，登入 AWS 或 使用 Support Center
+  - You can create multiple IAM users, each with access to specific AWS resources. To further restict access, you can create as many IAM users as necessary with read-only access to your AWS resources.
+    針對特定的資源，創建使用者並設定相對應的存取權限
+    
+Access Keys and Key Pairs
+存取金鑰 及 金鑰對
+  
 
 
 AWS 官網建議: Root Acount User 應該只執行的任務而非甚麼都可以去執行。
