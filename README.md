@@ -42,10 +42,38 @@ Access Keys and Key Pairs
 存取金鑰 及 金鑰對
 Access Keys: for api calls (authenticate)
 You must use access keys for programmatic access to AWS services and resources and to use the AWS CLI.
+Access Keys = (An access key ID, A secret access key)
+- If you lose or forget your access key, you can create a new set of access key.
+  重建 access key (遺失或忘掉)
+- Having a maximum of two access keys at any time
+  最多兩組
+- You can create access keys from the AWS CLI and from the AWS Management Console.
+  透過 CLI 或 Console 產生 access keys
+- You can create temporary access keys (which include a security token that must be sent to AWS when using the credentials) for use in less
+  secure environments or when you want to grant users temporary access to resuources in your AWS account.
+  臨時的access keys
 
 Key pairs: Linux base for loggin
 Consist of a public key and a private key
 You use key pairs to access Amazon EC2 instances and Amazon CloudFront.
+- A key pair is a pair of text files: a public key and a corresponding private key.  The strings inside the private and public key text files
+  are randomly generated numbers and characters, which makes them difficult to guess.
+  金鑰對是兩個文字檔，分別稱為公鑰及對應的私鑰，檔案其中的字串分別為隨機產生的數字與字元
+- The private key helps you creat a digital signature.
+  私鑰成為數據簽章
+- AWS uses the corresponding public key to validate this digital signature.
+  AWS使用對應的公鑰，用來驗證私鑰(數據簽章)
+- To create your own key pairs.
+  EC2:         ==> To enable access to the EC2               ==>    To create this from the EC2 console, the CLI, or via an API
+  EC2 的金鑰對用來存取 EC2 ，可以透過 EC2 的 Console 或 指令 或是 透過 API
+  CloudFront:  ==> To create signed URLs for private content ==>  To create this from Security Credentials page in the AWS Management Console
+ CloudFront 的金鑰對用來產生 signed URLs ，發佈有限制的 content (內容)
+ 
+ AWS Management Console
+ - A web application = To help you manage various AWS service
+ - A simple and convenient user Interface for each service.
+
+
   
 
 
