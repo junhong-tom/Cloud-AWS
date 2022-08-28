@@ -72,6 +72,61 @@ You use key pairs to access Amazon EC2 instances and Amazon CloudFront.
  AWS Management Console
  - A web application = To help you manage various AWS service
  - A simple and convenient user Interface for each service.
+ 
+ Accessing AWS Services the Right Way
+ - AWS recommands that you connect as an IAM user tather than connect with your default AWS Account root user credentials.
+
+You should create an IAM user (instead of a role) in the following cases:
+使用 IAM User 而非 IAM Role
+- You created an AWS account and you're the only person who works in that account. 
+  初次建立帳號，尚未建立任何帳號前
+- Other people in your group need to work in your AWS account, and your group is using no other identity mechanism.
+  沒有使用其他身分驗證機制，但同組同仁需在你的 AWS 帳號下工作
+- You want to use the CLI to work with AWS.
+  使用 CLI 操作 AWS 
+
+Create an IAM role (instead of a user) in the following cases:
+使用 IAM Role 而非 IAM User
+- You're creating an application that runs on an EC2 instance and the application makes requests to AWS.
+  在EC2中開發應用程式，同時應用程式向AWS 發出 requests
+- You're creating an app that runs on a mobile phone and makes requests to AWS.
+  開發應用程式，同時應用程式向AWS 發出 requests
+- Users in your company are authenticated in your corporate network and want to be able to use AWS without having to sign in again -- that is, you want to 
+  allow users to federate into AWS.
+  外部授權並要登入 AWS
+  
+實作登入 
+1. -- Console
+      A. Creating An IAM User
+      B. Logging In as the New IAM User
+      C. Creating an Access Key ID and Secret Access Key (Key Pair) for an IAM User
+      D. Using a Key Pair to Connect to an EC2 Instance
+         Createing a Key Pair
+3. -- CLI
+      A. The Structure of AWS CLI Commands
+      B. Installing AWS CLI
+      C. Configuring the AWS CLI
+      D. Where AWS CLI Stores the Configuration and Credential Files
+      E. Using Named Profiles
+      F. Creating a Custom Profile Using the Config and Credentials Files
+      G. Configuring the CLI to Use a Role
+      H. Specifying Environment Variables to Configure AWS CLI
+      I. Configuration Precedence
+      J. Using the AWS CLI
+      K. AWS CLI Command Structure
+      L. Getting Help Regarding the Commands
+      M. Controlling the Command Output
+      N. Connecting to a Running EC2 Instance from the Command Line.
+      O. Connecting from Another Server
+      P. Getting the DNS of a Server
+5. -- SDK
+      A. AWS SDKs and Python Boto3
+      B. Installing Boto3
+      C. Setting UP Credentials
+      D. Testing the Boto3 Installation
+
+
+
 
 
   
