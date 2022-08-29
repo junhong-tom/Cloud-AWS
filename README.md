@@ -98,7 +98,21 @@ Create an IAM role (instead of a user) in the following cases:
 實作登入 
 1. -- Console
       A. Creating An IAM User
+         root user (root user e-mail, password) loggin in 
+         IAM 儀表板 --  create a new IAM User as administrator
+         命名 
+         憑證類型
+         密碼 -- 密碼政策
+         許可 permission Next -- 預設 full permission
+         標籤
+         檢閱
+         Finial => 開始建立使用者
+         使用者登入網址: AWS 管理主控台存取的使用者能夠登入：https://{}.signin.aws.amazon.com/console
+         access keys => 下載
       B. Logging In as the New IAM User
+         使用者登入網址: AWS 管理主控台存取的使用者能夠登入：https://{}.signin.aws.amazon.com/console
+         修改密碼
+      
       C. Creating an Access Key ID and Secret Access Key (Key Pair) for an IAM User
       D. Using a Key Pair to Connect to an EC2 Instance
          Createing a Key Pair
