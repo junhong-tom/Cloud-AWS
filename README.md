@@ -107,13 +107,26 @@ Create an IAM role (instead of a user) in the following cases:
          標籤
          檢閱
          Finial => 開始建立使用者
-         使用者登入網址: AWS 管理主控台存取的使用者能夠登入：https://{}.signin.aws.amazon.com/console
+         使用者登入網址: AWS 管理主控台存取的使用者能夠登入：https://[Account ID | Account Alias].signin.aws.amazon.com/console
          access keys => 下載
       B. Logging In as the New IAM User
-         使用者登入網址: AWS 管理主控台存取的使用者能夠登入：https://{}.signin.aws.amazon.com/console
+         使用者登入網址: AWS 管理主控台存取的使用者能夠登入：https://[Account ID | Account Alias].signin.aws.amazon.com/console
          修改密碼
-      
+         The navigation bar will show "UserName@[Account ID | Account Alias]"
+         
+         To Create an account alias from the IAM dashboard.
+         從 IAM DashBoard 創建帳號的別名 Account alias
       C. Creating an Access Key ID and Secret Access Key (Key Pair) for an IAM User
+         - 在創建 IAM User 時，Aws 會自動產生 the Access Key ID 存取金鑰 and a Secret Access key 私密存取金鑰.
+         - Open the IAM console
+         - Select Users
+         - Select Security Credentials, and then, select Create Access Key
+         - Download the Access Keys by choosing Download .csv File
+         
+         This is the only time you can download or view the secret access keys.
+         CLI 創建 A
+         $ aws iam create-access -key -user-name sam_alapati
+      
       D. Using a Key Pair to Connect to an EC2 Instance
          Createing a Key Pair
 3. -- CLI
