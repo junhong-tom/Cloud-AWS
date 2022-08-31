@@ -128,7 +128,16 @@ Create an IAM role (instead of a user) in the following cases:
          $ aws iam create-access -key -user-name sam_alapati
       
       D. Using a Key Pair to Connect to an EC2 Instance
+         金鑰對 Key Pair 透過 SSH 登入 EC2 及 To Perform certtain tasks with CloudFront
          Createing a Key Pair
+         - 在 EC2 創建時，AWS 會去產生 Key pair 並把 Key Pair 中的公鑰嵌入 EC2 中。同時使用者必須下載私鑰 private key 
+           並儲存在要連入 EC2 的機器中。
+         - 金鑰對屬於 Region 服務級別。( A key pair is specific to a region.) 既如果發佈一個多區域的 EC2 實體，使用者
+           必須對每個區域 Region 中個別創建 金鑰對 Key Pair
+         - Security Group:
+           在產生金鑰對之前，會需要指定 Security Goup 控制封包進出 inbound and outbound traffic , 如果沒有指定 Security Group
+           會使用預設的 Security Group
+         
 3. -- CLI
       A. The Structure of AWS CLI Commands
       B. Installing AWS CLI
