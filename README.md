@@ -167,11 +167,45 @@ Create an IAM role (instead of a user) in the following cases:
          - Default Region
          - Default output Format
          
-      D. Where AWS CLI Stores the Configuration and Credential Files
-         - It stores the file under your home directory, in the .aws subdirectory
-         - Can view the configuration and credentials files 
+      D. 設定檔和憑證檔儲存位置 Where AWS CLI Stores the Configuration and Credential Files
+         - 位置在家目錄中的 .aws 子目錄中   It stores the file under your home directory, in the .aws subdirectory
+         - 檔案: ~\.aws\config & ~\.aws\credentials  Can view the configuration and credentials files 
+         
       E. Using Named Profiles
+         - Instead of all users using the same default profile "$HOME/.aws", you can create custom profiles with 
+           different credentials, regions, and output formats.   
+         - You can create any number of profiles you need.
+         - Profiles help you grant separate sets of privileges for different environments, such as development and 
+           production environments.
+         - You can create a profile and assign it to multiple accounts.
+         - Creating and using multiple profiles helps you implement different configurations for different sets of users.
+         
       F. Creating a Custom Profile Using the Config and Credentials Files
+      ~\.aws\config
+      [default]
+      region=us-west-2
+      output=jaon
+      
+      [profile user2]
+      region=us-east-1
+      output=text
+      
+      ~\.aws\credentials
+      [default]
+      aws_access_key_id=
+      aws_secret_access_key=
+      
+      [user2]
+      aws_access_key_id=
+      aws_secret_access_key=
+      
+      How to specify a named profile (user2) when executing an AWS CLI command
+      $
+      
+      How to create a profile by editing the config and credentials files.
+      $aws configure --profile use2
+      
+      
       G. Configuring the CLI to Use a Role
       H. Specifying Environment Variables to Configure AWS CLI
       I. Configuration Precedence
