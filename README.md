@@ -155,13 +155,21 @@ Create an IAM role (instead of a user) in the following cases:
       A. The Structure of AWS CLI Commands
          $aws s3 cp myvido.mp4 s3://samalapati/
       B. 安裝 AWS CLI (Installing AWS CLI)
+         https://docs.aws.amazon.com/zh_tw/cli/latest/userguide/getting-started-install.html  
          CLI is Python-based 
          To check Python Version
          AWS CLI comes already installed on the Amazon Linux AMI.
       C. 設定 CLI (Configuring the AWS CLI)
          在使用 CLI 之前，需要先設定。 Before you can start using the AWS CLI, you must configure it.
          $aws configure
+         - Information:
+         - Access Key ID and Secret Access Key
+         - Default Region
+         - Default output Format
+         
       D. Where AWS CLI Stores the Configuration and Credential Files
+         - It stores the file under your home directory, in the .aws subdirectory
+         - Can view the configuration and credentials files 
       E. Using Named Profiles
       F. Creating a Custom Profile Using the Config and Credentials Files
       G. Configuring the CLI to Use a Role
