@@ -137,11 +137,30 @@ Create an IAM role (instead of a user) in the following cases:
          - Security Group:
            在產生金鑰對之前，會需要指定 Security Goup 控制封包進出 inbound and outbound traffic , 如果沒有指定 Security Group
            會使用預設的 Security Group
+         - Follow these steps to create a key pair. 
+           1. Open EC2 Console  
+           2. select a region & Create Key Pair
+           3. Name Key Pair ==> You must provide the name of your key pair when you launch an EC2 instance.
+           4. Download the private key file
+           5. Connect to EC2 via SSH
+         - Update a key pair to AWS  
+           #  參考另一本書
+
          
 3. -- CLI
+      透過 CLI 這一個工具，可以幫助控制存取 AWS 的服務  The Aws CLI is a tool that helps you control multiple AWS services from the command line.
+      CLI 透過公開的 API 方式，來連入 AWS 的服務  The CLI connects to the AWS servics through the public APIs of the services.
+      AWS CLI 是由 Python SDK 建構的套件，既稱為 Boto The AWS is built on top of the AWS SDK for Python, all called Boto.
+      CLI 可以完成如同操作 Console 達成的功能  You can achieve the same functionality with AWS CLI that you do with the AWS console.
       A. The Structure of AWS CLI Commands
-      B. Installing AWS CLI
-      C. Configuring the AWS CLI
+         $aws s3 cp myvido.mp4 s3://samalapati/
+      B. 安裝 AWS CLI (Installing AWS CLI)
+         CLI is Python-based 
+         To check Python Version
+         AWS CLI comes already installed on the Amazon Linux AMI.
+      C. 設定 CLI (Configuring the AWS CLI)
+         在使用 CLI 之前，需要先設定。 Before you can start using the AWS CLI, you must configure it.
+         $aws configure
       D. Where AWS CLI Stores the Configuration and Credential Files
       E. Using Named Profiles
       F. Creating a Custom Profile Using the Config and Credentials Files
