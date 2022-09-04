@@ -204,13 +204,40 @@ Create an IAM role (instead of a user) in the following cases:
       
       How to create a profile by editing the config and credentials files.
       $aws configure --profile use2
-      
-      
+            
       G. Configuring the CLI to Use a Role
+      - You can also create a profile for an IAM role.
+      - An IAM role is a way to enable a user to gain permissions to perform actions in a different account.
+      ~\.aws\config
+      
+      [profile salesadmin]
+      role_arn = arn:aws:iam:123456780012:role/financeadmin
+      source_profile = default
+      
+      - To use a role profile,you must first do the following:
+        Create an IAM role to delegate permissions to user.
+        Allow the IAM user to assume the new role
+        Grant the IAM user permission to assume the new role.
+         
       H. Specifying Environment Variables to Configure AWS CLI
       I. Configuration Precedence
+      - The AWS CLI looks at credentials and configuration settings in the following order:
+      Command line options
+      Environment variables
+      The AWS credentials file  ~/.aws.credentials
+      The CLI config file       ~/.aws/config
+      Container credentials
+      Instance profile credentials
+      
       J. Using the AWS CLI
       K. AWS CLI Command Structure
+      $aws command subcommand [options and parameters]
+      command: top-level command = the name of an AWS service, ex ec2 or s3
+      subcommand: the operations you want to perform for that service.
+      ex. ec2 describe-instances
+      
+      $aws ec2 create-key-pair --key-name sam-key-pair
+      
       L. Getting Help Regarding the Commands
       M. Controlling the Command Output
       N. Connecting to a Running EC2 Instance from the Command Line.
