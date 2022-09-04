@@ -248,12 +248,15 @@ Create an IAM role (instead of a user) in the following cases:
       B. Installing Boto3
       C. Setting UP Credentials
       D. Testing the Boto3 Installation
+      
 
+Exercise:
+- Create an access key using the AWS Management Console
+- Install the AWS CLI on a linux server
+- Configure the AWS CLI
+- Change your AWS account password from the AWS Management Console.
+- Get Billing Information from the AWS Management Console.
 
-
-
-
-  
 
 
 AWS 官網建議: Root Acount User 應該只執行的任務而非甚麼都可以去執行。
