@@ -148,6 +148,8 @@ Create an IAM role (instead of a user) in the following cases:
 
          
 3. -- CLI
+      由 Python 開發編譯而成的工具。CLI is Python-based 
+      
       透過 CLI 這一個工具，可以幫助控制存取 AWS 的服務  The Aws CLI is a tool that helps you control multiple AWS services from the command line.
       CLI 透過公開的 API 方式，來連入 AWS 的服務  The CLI connects to the AWS servics through the public APIs of the services.
       AWS CLI 是由 Python SDK 建構的套件，既稱為 Boto The AWS is built on top of the AWS SDK for Python, all called Boto.
@@ -155,9 +157,15 @@ Create an IAM role (instead of a user) in the following cases:
       A. The Structure of AWS CLI Commands
          $aws s3 cp myvido.mp4 s3://samalapati/
       B. 安裝 AWS CLI (Installing AWS CLI)
-      
-         [參考](https://docs.aws.amazon.com/zh_tw/cli/latest/userguide/getting-started-install.html)
-         CLI is Python-based 
+         [安裝 AWS CLI 的參考指引]( https://docs.aws.amazon.com/zh_tw/cli/latest/userguide/getting-started-install.html ) 
+         下載並安裝 MSI Installer [下載網址:] https://awscli.amazonaws.com/AWSCLIV2.msi
+         替代方案:執行 msiexec 指令安裝 MSI Installer 
+         `C:\> msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi`
+         [過程記錄]
+         確認安裝
+         `C:\> aws --version`
+         [過程記錄]
+         Troubleshooting [參考網址:](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-troubleshooting.html
          To check Python Version
          AWS CLI comes already installed on the Amazon Linux AMI.
       C. 設定 CLI (Configuring the AWS CLI)
