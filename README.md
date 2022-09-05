@@ -155,7 +155,8 @@ Create an IAM role (instead of a user) in the following cases:
       A. The Structure of AWS CLI Commands
          $aws s3 cp myvido.mp4 s3://samalapati/
       B. 安裝 AWS CLI (Installing AWS CLI)
-         https://docs.aws.amazon.com/zh_tw/cli/latest/userguide/getting-started-install.html  
+      
+         [參考](https://docs.aws.amazon.com/zh_tw/cli/latest/userguide/getting-started-install.html)
          CLI is Python-based 
          To check Python Version
          AWS CLI comes already installed on the Amazon Linux AMI.
