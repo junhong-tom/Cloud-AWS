@@ -157,14 +157,25 @@ Create an IAM role (instead of a user) in the following cases:
       A. The Structure of AWS CLI Commands
          $aws s3 cp myvido.mp4 s3://samalapati/
       B. 安裝 AWS CLI (Installing AWS CLI)
+      
+      
          [安裝 AWS CLI 的參考指引]( https://docs.aws.amazon.com/zh_tw/cli/latest/userguide/getting-started-install.html ) 
          下載並安裝 MSI Installer [下載網址:] https://awscli.amazonaws.com/AWSCLIV2.msi
          替代方案:執行 msiexec 指令安裝 MSI Installer 
          `C:\> msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi`
          [過程記錄]
+         
+         
          確認安裝
          `C:\> aws --version`
+         
+         
          [過程記錄]
+         設定值與憑證所在的位置
+         C:\Users\XXXXX\.aws\config
+         C:\Users\XXXXX\.aws\credentials
+         
+         
          Troubleshooting [參考網址:](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-troubleshooting.html
          To check Python Version
          AWS CLI comes already installed on the Amazon Linux AMI.
